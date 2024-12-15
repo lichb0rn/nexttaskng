@@ -15,12 +15,23 @@
     "plugins": [
       {
         "name": "next"
+      },
+      {
+        "name": "@styled/typescript-styled-plugin",
+        "tags": ["styled", "css", "sty"]
       }
     ],
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/context/themes.js",
+    "src/context/GlobalProvider.js"
+  ],
   "exclude": ["node_modules"]
 }
